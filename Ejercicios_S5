@@ -1,0 +1,1052 @@
+Funcion ejercicio_1
+	Definir car Como Caracter;
+	Escribir" escriba un caracter"
+	leer car 
+	si car >= "a" y car <= "z" O car >="A" y car <= "Z" Entonces
+		Escribir "Es una consonante"
+	SiNo
+		si car = "." o car="," o car=";" o car =":" Entonces
+			Escribir " Es un signo de puntuacion"
+		finsi
+	FinSi	
+FinFuncion
+
+
+Funcion  ejercicio_2
+	Definir carácter Como Carácter
+	Escribir "Ingrese un carácter:"
+	Leer carácter
+	Si carácter >= '0' y carácter <= '9' entonces
+		Escribir "El carácter es un número."
+	Sino Si carácter = 'a' o carácter = 'e' o carácter = 'i' o carácter = 'o' o carácter = 'u' entonces
+			Escribir "El carácter,caracter, es una vocal."
+		Sino
+			Escribir "El carácter no es un número ni una vocal."
+		Fin Si
+	FinSi
+		
+FinFuncion
+
+Funcion  ejercicio_3
+	Definir car Como Caracter
+	Escribir " escriba una vocal"
+	leer car
+	si car= "a" Entonces
+		Escribir car "= 97"
+	sino
+		si car= "e" Entonces
+			Escribir car " =101"
+		sino 
+			si  car= "i" Entonces
+				Escribir car " =105"
+			SiNo
+				si car = "o" Entonces
+					Escribir car "=111"
+				SiNo
+					si car= "u" Entonces
+						Escribir car " =117"
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	Segun car Hacer
+		"A":
+			Escribir car "=65"
+		"E":
+			Escribir car "=69"
+		"I":
+			Escribir car "=73"
+		"O":
+			Escribir car "=79"
+		"U" :
+			Escribir car "=85"
+		De Otro Modo:
+			Escribir "No es una vocal"
+	Fin Segun	
+FinFuncion
+
+Funcion ejercicio_4
+	Definir nombre1, nombre2 Como Cadena
+    
+    Escribir "Ingrese el primer nombre:"
+    Leer nombre1
+    
+    Escribir "Ingrese el segundo nombre:"
+    Leer nombre2
+    
+    Si nombre1 = nombre2 entonces
+        Escribir "Los nombres son iguales."
+	SiNo
+		Escribir "Los nombres son diferentes"
+    Si nombre1 > nombre2 entonces
+			Escribir "El primer nombre es mayor que el segundo."
+		Sino
+			Escribir "El segundo nombre es mayor que el primero."
+		Fin Si
+	FinSi
+	
+FinFuncion
+
+Funcion ejercicio_5	
+		Definir n1,n2 Como Real
+		Escribir "Escriba 2 numeros"
+		Escribir " Escriba el primer numero"
+		leer n1
+		Escribir " Ecribir el segundo numero"
+		leer n2
+		si n1 = n2 Entonces
+			Escribir "Los numeros son iguales"
+		SiNo
+			Escribir " Los numeros son diferentes"
+			
+		FinSi
+		si n1 > n2
+			Escribir n1  " Es el  mayor y " n2 " es el menor"
+		sino 
+			Escribir n2  " Es el mayor y " n1 " es el menor"
+		FinSi
+FinFuncion
+
+Funcion ejercicio_6
+	Definir numero1, numero2, numero3 Como Entero
+    
+    Escribir "Ingrese el primer número:"
+    Leer numero1
+    
+    Escribir "Ingrese el segundo número:"
+    Leer numero2
+    
+    Escribir "Ingrese el tercer número:"
+    Leer numero3
+    
+    Si numero1 = numero2 y numero1 = numero3 entonces
+        Escribir "Los tres números son iguales."
+    Sino
+        Si numero1 >= numero2 y numero1 >= numero3 entonces
+            Escribir "El primer número es el mayor."
+        Sino Si numero2 >= numero3 entonces
+				Escribir "El segundo número es el mayor."
+			Sino
+				Escribir "El tercer número es el mayor."
+			Fin Si
+		Fin Si
+	FinSi
+FinFuncion
+
+Funcion ejercicio_7
+		Definir numero Como Real
+		
+		Escribir "Ingrese un número:"
+		Leer numero
+		
+		Si numero = 0 entonces
+			Escribir "El número es neutro."
+		Sino Si numero > 0 entonces
+				Escribir "El número es positivo."
+			Sino
+				Escribir "El número es negativo."
+			FinSi
+		FinSi
+FinFuncion
+
+Funcion ejercicio_8
+	
+	Definir cantidadLapices Como Entero
+    Definir precioPorLapiz Como Real
+    Escribir "Ingrese la cantidad de lápices:"
+    Leer cantidadLapices
+    Si cantidadLapices > 1000 entonces
+        precioPorLapiz = 1.0
+    Sino
+        precioPorLapiz = 1.50
+    Fin Si
+    totalPago = cantidadLapices * precioPorLapiz
+    Escribir "El total a pagar es:", totalPago
+	
+FinFuncion
+
+
+Funcion ejercicio_9
+	
+	Definir precioTraje Como Real
+	Escribir "Ingrese el precio del traje:"
+		Leer precioTraje
+		
+		Si precioTraje > 2500 entonces
+			descuento = precioTraje * 0.15
+			Escribir "Se hace un descuento del: 0.15"
+		Sino
+			descuento = precioTraje * 0.08
+			Escribir "Se hace un descuento del: 0.08"
+		Fin Si
+		
+		precioFinal = precioTraje - descuento
+		
+		Escribir "El precio final del traje es:", precioFinal
+FinFuncion
+
+
+Funcion ejercicio_10
+	Definir numeroPersonas Como Entero
+    Definir costoPorPersona, presupuesto Como Real
+	
+    Escribir "Ingrese el número de personas:"
+    Leer numeroPersonas
+    
+    Si numeroPersonas > 300 entonces
+        costoPorPersona = 75.00
+    Sino Si numeroPersonas > 200 entonces
+			costoPorPersona = 85.00
+		Sino
+			costoPorPersona = 95.00
+		Fin Si
+	FinSi
+		presupuesto = numeroPersonas * costoPorPersona
+		Escribir "El presupuesto para el evento es:", presupuesto
+FinFuncion
+
+
+Funcion ejercicio_11
+	Definir tipoUva Como Caracter
+    Definir precioInicial, gananciaTotal, tamañoUva  Como Real
+    
+    Escribir "Ingrese el tipo de uva (A o B):"
+    Leer tipoUva
+    
+    Escribir "Ingrese el tamaño de uva (1 o 2):"
+    Leer tamañoUva
+    
+    Si tipoUva = "A" entonces
+        Si tamañoUva = 1 entonces
+            precioInicial = precioInicial + 0.20
+        Sino
+            precioInicial = precioInicial + 0.30
+        Fin Si
+    Sino Si tipoUva = "B" entonces
+			Si tamañoUva = 1 entonces
+				precioInicial = precioInicial - 0.30
+			Sino
+				precioInicial = precioInicial - 0.50
+			Fin Si
+		Fin Si
+	FinSi
+	Escribir "Ingrese la cantidad de kilos de uva entregados:"
+	Leer kilosUva
+	
+	gananciaTotal = kilosUva * precioInicial
+	
+	Escribir "La ganancia obtenida es:", gananciaTotal
+FinFuncion
+
+Funcion ejercicio_12
+	
+	Definir numeroAlumnos Como Entero
+    Definir costoAlumno, costoTotal Como Real
+    
+    Escribir "Ingrese el número de alumnos:"
+    Leer numeroAlumnos
+    
+    Si numeroAlumnos >= 100 entonces
+        costoAlumno = 65.00
+    Sino Si numeroAlumnos >= 50 entonces
+			costoAlumno = 70.00
+		Sino Si numeroAlumnos >= 30 entonces
+				costoAlumno = 95.00
+			Sino
+				costoAlumno = 0.00
+				costoTotal = 4000.00
+			Fin Si
+		FinSi
+	finsi
+	Si costoAlumno > 0.00 entonces
+		costoTotal = numeroAlumnos * costoAlumno
+	Fin Si
+	
+	Escribir "El costo por alumno es:", costoAlumno
+	Escribir "El pago a la compañía de autobuses es:", costoTotal
+FinFuncion
+
+
+Funcion ejercicio_13 
+	
+	Definir precioA, precioB, precioC como Reales
+    Definir numeroPersonas como Entero
+    Definir tipoAutobus como Carácter
+    Definir costoTotal, costoPorPersona como Reales
+	
+    precioA = 2.0
+    precioB = 2.5
+    precioC = 3.0
+	
+    Escribir "Ingrese el tipo de autobús (A, B o C):"
+    Leer tipoAutobus
+	
+    Escribir "Ingrese el número de personas:"
+    Leer numeroPersonas
+	
+    Si tipoAutobus = "A" Entonces
+        Si numeroPersonas >= 20 Entonces
+            costoTotal = precioA * numeroPersonas
+            costoPorPersona = costoTotal / numeroPersonas
+        Sino
+            costoTotal = precioA * 20
+            costoPorPersona = costoTotal / 20
+        FinSi
+	FinSi
+	
+	Si tipoAutobus = "B" Entonces
+        Si numeroPersonas >= 20 Entonces
+            costoTotal = precioB * numeroPersonas
+            costoPorPersona = costoTotal / numeroPersonas
+        Sino
+            costoTotal = precioB * 20
+            costoPorPersona = costoTotal / 20
+        FinSi
+	FinSi
+	
+	Si tipoAutobus = "C" Entonces
+        Si numeroPersonas >= 20 Entonces
+            costoTotal = precioC * numeroPersonas
+            costoPorPersona = costoTotal / numeroPersonas
+        Sino
+            costoTotal = precioC * 20
+            costoPorPersona = costoTotal / 20
+        FinSi
+    FinSi
+	
+	
+    Escribir "El costo total del viaje es:", costoTotal
+    Escribir "El costo por persona es:", costoPorPersona
+	
+FinFuncion
+
+
+Funcion ejercicio_14
+	    Definir cantidadColas Como Entero
+		Definir precioUnidad, costoTotalSinIVA, iva, totalAPagar Como Real
+		
+		Escribir "Ingrese la cantidad de colas a comprar:"
+		Leer cantidadColas
+		
+		Si cantidadColas > 23 entonces
+			precioUnidad = 0.50
+		Sino
+			precioUnidad = 0.60
+		Fin Si
+		
+		costoTotalSinIVA = cantidadColas * precioUnidad
+		iva = costoTotalSinIVA * 0.12
+		totalAPagar = costoTotalSinIVA + iva
+		
+		Escribir "Cantidad comprada:", cantidadColas
+		Escribir "Costo por unidad:", precioUnidad
+		Escribir "Total sin IVA:", costoTotalSinIVA
+		Escribir "IVA:", iva
+		Escribir "Total a pagar:", totalAPagar
+		
+FinFuncion
+
+
+Funcion ejercicio_15
+	
+	
+    Definir cantidadComprada, precioTotal, descuentoInicial, total, descuentoAdicional, valorPagar como Reales
+	
+    Escribir "Ingrese la cantidad de productos comprados:"
+    Leer cantidadComprada
+	
+    Escribir "Ingrese el valor total de la compra:"
+    Leer precioTotal
+	
+    Si cantidadComprada > 19 Entonces
+        descuentoInicial = precioTotal * 0.10
+    Sino
+        descuentoInicial = precioTotal * 0.20
+    FinSi
+	
+    total = precioTotal - descuentoInicial
+    descuentoAdicional = total * 0.05
+    valorPagar = total - descuentoAdicional
+	
+    Escribir "Cantidad comprada:", cantidadComprada
+    Escribir "Precio original:", precioTotal
+    Escribir "Descuento inicial:", descuentoInicial
+    Escribir "Total:", total
+    Escribir "Descuento adicional:", descuentoAdicional
+    Escribir "Valor a pagar:", valorPagar
+	
+FinFuncion
+
+
+Funcion ejercicio_16
+	
+	Definir numeroCita Como Entero
+    Definir costoConsulta, montoTotalTratamiento Como Real
+    
+    Escribir "Ingrese el número de cita:"
+    Leer numeroCita
+    
+    Si numeroCita <= 3 entonces
+        costoConsulta = 200.00
+    Sino
+        Si numeroCita <= 5 entonces
+            costoConsulta = 150.00
+        Sino
+            Si numeroCita <= 8 entonces
+                costoConsulta = 100.00
+            Sino
+                costoConsulta = 50.00
+            Fin Si
+        Fin Si
+    Fin Si
+    
+    montoTotalTratamiento = (3 * 200.00) + (2 * 150.00) + (3 * 100.00) + ((numeroCita - 8) * 50.00)
+    
+    Escribir "Costo de la consulta:", costoConsulta
+    Escribir "Monto total pagado por el tratamiento:", montoTotalTratamiento
+	
+FinFuncion
+Funcion ejercicio_17
+	
+	Definir claveProducto Como Entero
+    Definir costoMateriaPrima, costoManoDeObra, costoFabricacion, costoProduccion, precioVenta Como Real
+    
+    Escribir "Ingrese la clave del producto (1, 2, 3, 4, 5 o 6):"
+    Leer claveProducto
+    
+    Escribir "Ingrese el costo de la materia prima:"
+    Leer costoMateriaPrima
+    
+    Si claveProducto = 3 o claveProducto = 4 entonces
+        costoManoDeObra = 0.75 * costoMateriaPrima
+    Sino
+        Si claveProducto = 1 o claveProducto = 5 entonces
+            costoManoDeObra = 0.80 * costoMateriaPrima
+        Sino
+            costoManoDeObra = 0.85 * costoMateriaPrima
+        Fin Si
+    Fin Si
+    
+    Si claveProducto = 2 o claveProducto = 5 entonces
+        costoFabricacion = 0.30 * costoMateriaPrima
+    Sino
+        Si claveProducto = 3 o claveProducto = 6 entonces
+            costoFabricacion = 0.35 * costoMateriaPrima
+        Sino
+            costoFabricacion = 0.28 * costoMateriaPrima
+        Fin Si
+    Fin Si
+    
+    costoProduccion = costoMateriaPrima + costoManoDeObra + costoFabricacion
+    precioVenta = costoProduccion + (0.45 * costoProduccion)
+    
+    Escribir "Precio de venta:", precioVenta
+	
+FinFuncion
+
+
+Funcion  ejercicio_18
+	
+	Escribir "Ingrese el tipo de tarjeta del cliente (1, 2, 3 u otro): "
+    Leer tipoTarjeta
+	
+    Si tipoTarjeta = 1 Entonces
+        aumento = 0.25
+    Sino Si tipoTarjeta = 2 Entonces
+			aumento = 0.35
+		Sino Si tipoTarjeta = 3 Entonces
+				aumento = 0.40
+			Sino
+				aumento = 0.50
+			Fin Si
+		FinSi
+	FinSi
+	
+	
+	Escribir "Ingrese el límite de crédito actual: "
+	Leer limiteCredito
+	
+	nuevoLimite = limiteCredito + (limiteCredito * aumento)
+	
+	Escribir "El nuevo límite de crédito es: ", nuevoLimite
+
+FinFuncion
+
+
+Funcion ejercicio_19
+	Escribir "Ingrese el peso del paquete en kg: "
+    Leer peso
+	
+    Si peso <= 5 Entonces
+        Escribir "Ingrese la zona de destino (Norte, Centro, Sur, Europa, Asia): "
+        Leer zona
+		
+        Segun zona Hacer
+			"Norte":
+                costo = peso * 1.5
+			"Centro":
+                costo = peso * 2.0
+			"Sur":
+                costo = peso * 2.5
+			"Europa":
+                costo = peso * 3.5
+			"Asia":
+                costo = peso * 4.0
+				De Otro Modo
+                Escribir "Zona de destino inválida"
+        Fin Segun
+		
+        Si costo <> 0 Entonces
+            Escribir "El costo del servicio de paquetería es: ", costo
+        Fin Si
+		
+    Sino
+        Escribir "El paquete excede el peso máximo permitido. No puede ser transportado."
+    Fin Si
+FinFuncion
+
+
+Funcion ejercicio_20
+	
+	Definir alumnosMenos40, alumnos40a50, alumnos50a60, alumnosMas60 Como Entero
+	Definir sumaPesosMenos40, sumaPesos40a50, sumaPesos50a60, sumaPesosMas60 Como Real
+	
+	alumnosMenos40= 0
+	alumnos40a50= 0
+	alumnos50a60 = 0
+	alumnosMas60 = 0
+	sumaPesosMenos40= 0
+	sumaPesos40a50= 0
+	sumaPesos50a60= 0
+	sumaPesosMas60= 0
+	
+	Escribir "Ingrese el peso del alumno (ingrese 0 para finalizar): "
+	Leer peso
+	
+	Mientras peso <> 0 Hacer
+		Si peso < 40 Entonces
+			alumnosMenos40 <- alumnosMenos40 + 1
+			sumaPesosMenos40 <- sumaPesosMenos40 + peso
+		Sino
+			Si peso >= 40 Y peso < 50 Entonces
+				alumnos40a50 <- alumnos40a50 + 1
+				sumaPesos40a50 <- sumaPesos40a50 + peso
+			Sino
+				Si peso >= 50 Y peso < 60 Entonces
+					alumnos50a60 <- alumnos50a60 + 1
+					sumaPesos50a60 <- sumaPesos50a60 + peso
+				Sino
+					alumnosMas60 <- alumnosMas60 + 1
+					sumaPesosMas60 <- sumaPesosMas60 + peso
+				Fin Si
+			Fin Si
+		Fin Si
+		
+		Escribir "Ingrese el peso del siguiente alumno (ingrese 0 para finalizar): "
+		Leer peso
+	Fin Mientras
+	Si alumnosMenos40 > 0 Entonces
+		Escribir "Alumnos con menos de 40 kg:", alumnosMenos40
+		Escribir "Promedio de peso en el rango de menos de 40 kg:", sumaPesosMenos40 / alumnosMenos40
+	Fin Si
+	Si alumnos40a50 > 0 Entonces
+		Escribir "Alumnos con peso entre 40 y 50 kg:", alumnos40a50
+		Escribir "Promedio de peso en el rango de 40 a 50 kg:", sumaPesos40a50 / alumnos40a50
+	Fin Si
+	Si alumnos50a60 > 0 Entonces
+		Escribir "Alumnos con peso entre 50 y 60 kg:", alumnos50a60
+		Escribir "Promedio de peso en el rango de 50 a 60 kg:", sumaPesos50a60 / alumnos50a60
+	Fin Si
+	Si alumnosMas60 > 0 Entonces
+		Escribir "Alumnos con más de 60 kg:", alumnosMas60
+		Escribir "Promedio de peso en el rango de más de 60 kg:", sumaPesosMas60 / alumnosMas60
+	Fin Si
+	
+FinFuncion
+
+
+Funcion ejercicio_21
+	Definir numero1, numero2, numero3 Como Entero
+	
+    Escribir "Ingrese el número 1:"
+    Leer numero1
+	
+    Escribir "Ingrese el número 2:"
+    Leer numero2
+	
+    Escribir "Ingrese el número 3:"
+    Leer numero3
+	
+    Si numero1 = 2 * numero2 Y numero1 = numero3 - (numero3 * 0.2) Entonces
+        Escribir "El número 1 es el doble del número 2 y 20% menos que el número 3."
+    Sino
+        Escribir "El número 1 no cumple con las condiciones especificadas."
+    Fin Si
+	
+FinFuncion
+
+
+Funcion ejercicio_22
+	Definir numero1, numero2, numero3 como Enteros
+	
+    Escribir "Ingrese el número 1:"
+    Leer numero1
+	
+    Escribir "Ingrese el número 2:"
+    Leer numero2
+	
+    Escribir "Ingrese el número 3:"
+    Leer numero3
+	
+    Si numero1 = (numero2 * 2) Y numero1 = (numero3 - (numero3 * 0.2)) Entonces
+        Escribir "El número 1 es el doble del número 2 y un 20% menos que el número 3"
+    Sino
+        Si numero1 <> (numero2 * 2) Entonces
+            Escribir "El número 1 no es el doble del número 2"
+        FinSi
+        Si numero1 <> (numero3 - (numero3 * 0.2)) Entonces
+            Escribir "El número 1 no es un 20% menos que el número 3"
+        FinSi
+    FinSi
+FinFuncion
+
+Funcion ejercicio_23
+	
+	Definir numero como Entero
+	
+	Escribir "Ingrese un número del 1 al 7:"
+	Leer numero
+	
+	Segun numero Hacer
+		Caso 1:
+			Escribir "Lunes"
+		Caso 2:
+			Escribir "Martes"
+		Caso 3:
+			Escribir "Miércoles"
+		Caso 4:
+			Escribir "Jueves"
+		Caso 5:
+			Escribir "Viernes"
+		Caso 6:
+			Escribir "Sábado"
+		Caso 7:
+			Escribir "Domingo"
+		De Otro Modo:
+			Escribir "Número inválido. Ingrese un número del 1 al 7."
+	FinSegun
+		
+FinFuncion
+
+Funcion ejercicio_24
+	
+	Definir numero como entero
+    
+    Escribir "Ingrese un número:"
+    Leer numero
+    
+    Segun numero Hacer
+        caso 1:
+            Escribir "Enero"
+        caso 2:
+            Escribir "Febrero"
+        caso 3:
+            Escribir "Marzo"
+        caso 4:
+            Escribir "Abril"
+        caso 5:
+            Escribir "Mayo"
+        caso 6:
+            Escribir "Junio"
+        caso 7:
+            Escribir "Julio"
+        caso 8:
+            Escribir "Agosto"
+        caso 9:
+            Escribir "Septiembre"
+        caso 10:
+            Escribir "Octubre"
+        caso 11:
+            Escribir "Noviembre"
+        caso 12:
+            Escribir "Diciembre"
+            
+    Fin Segun
+	si numero > 12 Entonces
+		Escribir "Error: El número ingresado no está entre 1 y 12"
+	FinSi
+FinFuncion
+
+
+Funcion ejercicio_25
+	
+	Definir estatura como real
+    Definir sumaEstaturas como real
+    Definir contador como entero
+    
+    contador <- 0
+    sumaEstaturas <- 0
+    
+    Escribir "Ingrese una estatura (en metros) o 0 para finalizar:"
+    Leer estatura
+    
+    Mientras estatura <> 0 Hacer
+        sumaEstaturas <- sumaEstaturas + estatura
+        contador <- contador + 1
+        
+        Escribir "Ingrese una estatura (en metros) o 0 para finalizar:"
+        Leer estatura
+    Fin Mientras
+    
+    Si contador > 0 Entonces
+        promedio <- sumaEstaturas / contador
+        Escribir "El promedio de estaturas es:", promedio
+    Sino
+        Escribir "No se ingresaron estaturas"
+    Fin Si
+FinFuncion
+
+
+Funcion ejercicio_26
+	
+	Definir numero como entero
+    
+    Para numero <- 0 Hasta 100 Con Paso 2 Hacer
+        Escribir numero
+    Fin Para
+	
+FinFuncion
+
+
+Funcion ejercicio_27
+	Definir contador, numero, suma como entero
+    
+    contador <- 1
+    suma <- 0
+    
+    Mientras contador <= 10 Hacer
+        Escribir "Ingrese el número ", contador, ":"
+        Leer numero
+        suma <- suma + numero
+               contador <- contador + 1
+    Fin Mientras
+    
+    Escribir "La suma acumulada es: ", suma
+FinFuncion
+
+Funcion ejercicio_28
+	Definir N, contador como entero
+    Definir edad, suma_edades como real
+    
+    Escribir "Ingrese la cantidad de alumnos:"
+    Leer N
+    
+    contador <- 1
+    suma_edades <- 0
+    
+    Mientras contador <= N Hacer
+        Escribir "Ingrese la edad del alumno ", contador, ":"
+        Leer edad
+        suma_edades <- suma_edades + edad
+        contador <- contador + 1
+    Fin Mientras
+    
+    Si N > 0 Entonces
+        Promedio <- suma_edades / N
+        Escribir "La edad promedio es: ", Promedio
+    Sino
+        Escribir "No se ingresaron alumnos."
+    Fin Si
+FinFuncion
+Funcion ejercicio_29
+	Definir valor_hora, total_horas, sueldo como real
+    Definir horas_trabajadas como entero
+    Definir dias_mes como entero
+    dias_mes <- 20
+    
+    Escribir "Ingrese el valor por hora:"
+    Leer valor_hora
+    
+    total_horas <- 0
+    
+    Para dia <- 1 Hasta dias_mes Hacer
+        Escribir "Ingrese las horas trabajadas el día ", dia, ":"
+        Leer horas_trabajadas
+        total_horas <- total_horas + horas_trabajadas
+    Fin Para
+    
+    sueldo <- valor_hora * total_horas
+    
+    Escribir "El total de horas trabajadas es: ", total_horas
+    Escribir "El sueldo a recibir es: $", sueldo
+	
+FinFuncion
+
+
+Funcion ejercicio_30
+	Definir N, monto, contador_mayor1000, contador_entre500y1000, contador_menorigual500 como entero
+	Definir total_mayor1000, total_entre500y1000, total_menorigual500, total_ventas como real
+	
+	contador_mayor1000 <- 0
+	contador_entre500y1000 <- 0
+	contador_menorigual500 <- 0
+	total_mayor1000 <- 0
+	total_entre500y1000 <- 0
+	total_menorigual500 <- 0
+	total_ventas <- 0
+	
+	Escribir "Ingrese el número de ventas realizadas:"
+	Leer N
+	
+	Para i <- 1 Hasta N Hacer
+		Escribir "Ingrese el monto de la venta ", i, ":"
+		Leer monto
+	Fin Para
+	
+	Escribir "Ventas mayores a $1000: ", contador_mayor1000
+	Escribir "Monto total de ventas mayores a $1000: $", total_mayor1000
+	Escribir "Ventas entre $500 y $1000: ", contador_entre500y1000
+	Escribir "Monto total de ventas entre $500 y $1000: $", total_entre500y1000
+	Escribir "Ventas menores o iguales a $500: ", contador_menorigual500
+	Escribir "Monto total de ventas menores o iguales a $500: $", total_menorigual500
+	
+	Escribir "Ventas totales: ", N
+	Escribir "Monto total de ventas: $", total_ventas
+FinFuncion
+Funcion ejercicio_31
+	Definir n como entero
+	Definir logica, requerimientos, calculos como real
+	Definir suma_logica, suma_requerimientos, suma_calculos como real
+	Definir promedio_logica, promedio_requerimientos, promedio_calculos, promedio_general como real
+	
+	suma_logica <- 0
+	suma_requerimientos <- 0
+	suma_calculos <- 0
+	promedio_logica <- 0
+	promedio_requerimientos <- 0
+	promedio_calculos <- 0
+	promedio_general <- 0
+	
+	Escribir "Ingrese la cantidad de alumnos:"
+	Leer n
+	
+	Para i <- 1 Hasta n Hacer
+		Escribir "Alumno ", i
+		
+		Escribir "Ingrese la nota de la asignatura Lógica:"
+		Leer logica
+		suma_logica <- suma_logica + logica
+		
+		Escribir "Ingrese la nota de la asignatura Requerimientos:"
+		Leer requerimientos
+		suma_requerimientos <- suma_requerimientos + requerimientos
+		
+		Escribir "Ingrese la nota de la asignatura Cálculos:"
+		Leer calculos
+		suma_calculos <- suma_calculos + calculos
+		
+		Escribir ""
+	Fin Para
+	
+	promedio_logica <- suma_logica / n
+	promedio_requerimientos <- suma_requerimientos / n
+	promedio_calculos <- suma_calculos / n
+	promedio_general <- (promedio_logica + promedio_requerimientos + promedio_calculos) / 3
+	
+	Escribir "Promedio de la asignatura Lógica: ", promedio_logica
+	Escribir "Promedio de la asignatura Requerimientos: ", promedio_requerimientos
+	Escribir "Promedio de la asignatura Cálculos: ", promedio_calculos
+	Escribir "Promedio general de todas las asignaturas: ", promedio_general
+FinFuncion
+Funcion ejercicio_32
+	contador_auxiliar = 0
+	contador_agregado = 0
+	contador_principal = 0
+	suma_sueldos = 0
+	suma_bonos = 0
+	
+	REPETIR
+		ESCRIBIR "Ingrese la categoría del profesor (Auxiliar, Agregado, Principal):"
+		LEER categoria
+		
+		SI categoria = "Auxiliar" ENTONCES
+			ESCRIBIR "Ingrese el sueldo del profesor:"
+			LEER sueldo
+			incremento = sueldo * 0.10
+			bono = sueldo + incremento
+			suma_sueldos = suma_sueldos + sueldo
+			suma_bonos = suma_bonos + bono
+			contador_auxiliar = contador_auxiliar + 1
+			
+		SiNo
+			SI categoria= "Agregado" ENTONCES
+				ESCRIBIR "Ingrese el sueldo del profesor:"
+				LEER sueldo
+				incremento = sueldo * 0.20
+				bono = sueldo + incremento
+				suma_sueldos = suma_sueldos + sueldo
+				suma_bonos = suma_bonos + bono
+				contador_agregado = contador_agregado + 1
+				
+			sino 
+				SI categoria = "Principal" ENTONCES
+					ESCRIBIR "Ingrese el sueldo del profesor:"
+					LEER sueldo
+					incremento = sueldo * 0.50
+					bono = sueldo + incremento
+					suma_sueldos = suma_sueldos + sueldo
+					suma_bonos = suma_bonos + bono
+					contador_principal = contador_principal + 1
+				FinSi
+			FinSi
+		FinSi
+	HASTA QUE categoria = "0"
+	
+	promedio_sueldos = suma_sueldos / (contador_auxiliar + contador_agregado + contador_principal)
+	promedio_bonos = suma_bonos / (contador_auxiliar + contador_agregado + contador_principal)
+	
+	ESCRIBIR "El promedio de los sueldos es:", promedio_sueldos
+	ESCRIBIR "El promedio de los bonos es:", promedio_bonos
+FinFuncion
+Funcion ejercicio_33
+	Definir n, pasaje, recorrido, precio, total_pasajes, total_pasajes_hasta_100km, total_pasajes_mas_100km como entero
+	Definir suma_precios, promedio_precios como real
+	
+	total_pasajes <- 0
+	total_pasajes_hasta_100km <- 0
+	total_pasajes_mas_100km <- 0
+	suma_precios <- 0
+	
+	Escribir "Ingrese la cantidad de pasajes:"
+	Leer n
+	
+	Escribir "Ingrese el precio base del pasaje:"
+	Leer pasaje
+	
+	Para i <- 1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese el recorrido en kilómetros del pasaje ", i, ":"
+		Leer recorrido
+		
+		Si recorrido <= 100 Entonces
+			precio <- pasaje
+			total_pasajes_hasta_100km <- total_pasajes_hasta_100km + 1
+		Sino
+			precio <- pasaje + (pasaje * 0.2)
+			total_pasajes_mas_100km <- total_pasajes_mas_100km + 1
+		FinSi
+		
+		suma_precios <- suma_precios + precio
+		total_pasajes <- total_pasajes + 1
+		
+		Escribir "El pasaje ", i, " tiene un precio de ", precio, " dólares."
+	FinPara
+	
+	promedio_precios <- suma_precios / total_pasajes
+	
+	Escribir "Total de pasajes: ", total_pasajes
+	Escribir "Total de pasajes hasta 100 km: ", total_pasajes_hasta_100km
+	Escribir "Total de pasajes más de 100 km: ", total_pasajes_mas_100km
+	Escribir "Promedio de precios: ", promedio_precios
+	
+FinFuncion
+
+
+Funcion ejercicio_34
+	
+	Definir numero, suma_numeros, cantidad_numeros, promedio_numeros Como Real
+	
+	suma_numeros <- 0
+	cantidad_numeros <- 0
+	
+	Escribir "Ingrese una serie de números (ingrese 0 para finalizar):"
+	
+	Repetir
+		Leer numero
+		
+		Si numero <> 0 Entonces
+			suma_numeros <- suma_numeros + numero
+			cantidad_numeros <- cantidad_numeros + 1
+		FinSi
+		
+	Hasta Que numero = 0
+	
+	Si cantidad_numeros > 0 Entonces
+		promedio_numeros <- suma_numeros / cantidad_numeros
+		Escribir "La suma de los números distintos de cero es: ", suma_numeros
+		Escribir "El promedio de los números distintos de cero es: ", promedio_numeros
+	Sino
+		Escribir "No se ingresaron números distintos de cero."
+	FinSi
+	
+FinFuncion
+Funcion ejercicio_35
+	Definir numero, cantidad_positivos, total_multiplos_tres como entero
+	
+	cantidad_positivos <- 0
+	total_multiplos_tres <- 0
+	
+	Escribir "Ingrese una serie de números positivos (ingrese un número negativo para finalizar):"
+	
+	Repetir
+		Leer numero
+		
+		Si numero >= 0 Entonces
+			cantidad_positivos <- cantidad_positivos + 1
+			
+			Si numero % 3 = 0 Entonces
+				total_multiplos_tres <- total_multiplos_tres + numero
+			FinSi
+		FinSi
+		
+	Hasta Que numero < 0
+	
+	Si cantidad_positivos > 0 Entonces
+		Escribir "La cantidad de números positivos es: ", cantidad_positivos
+		Escribir "El total de los números positivos múltiplos de 3 es: ", total_multiplos_tres
+	Sino
+		Escribir "No se ingresaron números positivos."
+	FinSi
+	
+	
+FinFuncion
+
+Algoritmo ejercicios
+	//ejercicio_1
+	//ejercicio_2
+	//ejercicio_3
+	//ejercicio_4
+	//ejercicio_5
+	//ejercicio_6
+	//ejercicio_7
+	//ejercicio_8
+	//ejercicio_9
+	//ejercicio_10
+	//ejercicio_11
+	//ejercicio_12
+	//ejercicio_13
+	//ejercicio_14
+	//ejercicio_15
+	//ejercicio_16
+	//ejercicio_17
+	//ejercicio_18
+	//ejercicio_19
+	//ejercicio_20
+	//ejercicio_21
+	//ejercicio_22
+	//ejercicio_23
+	//ejercicio_24
+	//ejercicio_25
+	//ejercicio_26
+	//ejercicio_27
+	//ejercicio_28
+	//ejercicio_29
+	//ejercicio_30
+	//ejercicio_31
+	//ejercicio_32
+	//ejercicio_33
+	//ejercicio_34
+	//ejercicio_35
+	
+	
+FinAlgoritmo
